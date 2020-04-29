@@ -13,14 +13,14 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 app = Flask(__name__)
 
-ENV = 'dev'
+ENV = 'prod'
 
 if ENV == 'dev':
     app.debug = True
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'server.db')
 else:
     app.debug = False
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://vvpdoktyfzhrmt:7b5dc718f1dc75113bfbc437ce871f6adeecf3fa925a287287415a249c84dbe9@ec2-54-88-130-244.compute-1.amazonaws.com:5432/ddqkiibspf0ab7'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://qmpvftjridfytq:a3257b574983a518660e8ae8fe19d1b84275151ab36536dd0ff838ab09f36b38@ec2-3-211-48-92.compute-1.amazonaws.com:5432/dahncja85fit62'
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = '\xd7\xde"\t\x82\x10@\xd7\x15\xab)\xc3\rA\xc6\xe4\xbf~\xb1v\x01\x9e\xa7\xc1'
