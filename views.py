@@ -20,7 +20,7 @@ if ENV == 'dev':
     app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'server.db')
 else:
     app.debug = False
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://qmpvftjridfytq:a3257b574983a518660e8ae8fe19d1b84275151ab36536dd0ff838ab09f36b38@ec2-3-211-48-92.compute-1.amazonaws.com:5432/dahncja85fit62'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://tcmkffnivtqxpp:ba4ee87c931926ddae4332d3f3fcb9bc27d615fae310d8f67cb2162227d889ea@ec2-50-17-21-170.compute-1.amazonaws.com:5432/dfff403la84nvg'
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SECRET_KEY'] = '\xd7\xde"\t\x82\x10@\xd7\x15\xab)\xc3\rA\xc6\xe4\xbf~\xb1v\x01\x9e\xa7\xc1'
