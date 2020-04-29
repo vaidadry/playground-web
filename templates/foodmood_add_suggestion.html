@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block title %}
+FoodMood
+{% endblock %}
+
+{% block content %}
+<div class="section-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <img src="./static/assets/images/cover-foodmood.jpg" class="img-responsive" alt="">
+        <div class="card-container">
+          <div class="text-center">
+            <h1 class="h2">001 : FoodMood</h1>
+          </div>
+          <p> Cool pitch on foodMood app Cool pitch on foodMood app Cool pitch on foodMood app Cool pitch on
+            foodMood app Cool pitch on foodMood app Cool pitch on foodMood app Cool pitch on foodMood app
+            Cool pitch on foodMood app Cool pitch on foodMood app</p>
+        </div>
+      </div>
+      <div class="col-md-8 col-md-offset-2 section-container-spacer">
+        <div class="text-center">
+          <h3>have a food idea?</h3>
+          <div class="alert alert-success" role="alert">Contribute with your amazing recipe below!</div>
+          {% if message %}
+            <div class="alert alert-danger">{{ message | safe }}</div>
+          {% endif %}
+          <form action="add_suggestion" method="post" class="reveal-content">
+            {{ form.csrf_token }}
+            <div class="form-group">{{ form.title }}</div>
+            <div class="form-group">{{ form.url }}
+              {% if form.url.errors %}
+                <ul class="alert alert-danger">
+                  {% for error in form.url.errors %}
+                    <li>{{error}}</li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </div>
+            <div class="form-group">{{ form.selectmeal }}
+            </div>
+            <div class="form-group">
+              {{ form.comfortfood }} {{ form.comfortfood.label }}<br>
+              {{ form.fish }} {{ form.fish.label }}
+            </div>
+            <button type="submit" class="btn btn-default btn-lg">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8 col-md-offset-2 section-container-spacer">
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <img src="./static/assets/images/001-food1.jpg" class="img-responsive" alt="">
+            <p>some title</p>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <img src="./static/assets/images/001-food1.jpg" class="img-responsive" alt="">
+            <p>some title</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+{% endblock %}

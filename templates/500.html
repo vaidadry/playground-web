@@ -1,0 +1,12 @@
+{% extends "base-error.html" %}
+
+{% block title %}
+500 error
+{% endblock %}
+
+{% block content %}
+<h2 class="h2">500 : Internal server error</h2>
+<p>Sorry, it's me, not you<br>
+    <a href="{{ url_for('my_home') }}">let's try again! </a></p>
+<iframe src="https://giphy.com/embed/BsQAVgY6ksvIY" width="360" height="200" frameBorder="0" class="giphy-embed"></iframe>
+{% endblock %}

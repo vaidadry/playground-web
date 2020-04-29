@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %}
+VoteMe10
+{% endblock %}
+
+{% block content %}
+<div class="section-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <img src="./static/assets/images/cover-vote.jpg" class="img-responsive" alt="">
+        <div class="card-container">
+          <div class="text-center">
+            <h1 class="h2">003 : VoteMe10</h1>
+          </div>
+          <p>A lazy script dedicated to all flat Earthers, obsessive pet owners and other supercool people like myself.
+            Increase your self esteem and dopamine level with one click only. Helps my beauties to win a beauty pageant! </p>
+        </div>
+      </div>
+    </div>
+        <div class="col-md-8 col-md-offset-2 section-container-spacer">
+          <div class="row">
+            <form action="voted" method="post" class="reveal-content">
+              <div class="col-xs-12 col-md-6">
+                <a href="https://www.delfi.lt/apps/augintinis/dalyvis/17473" target="_blank">
+                  <img src="./static/assets/images/003-hibou.jpg" class="img-responsive" alt=""><br>
+                </a>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-default btn-lg" name="voting" value="hibou">VoteMe5</button><br>
+                </div>
+              </div>
+            </form>
+            <div class="col-xs-12 col-md-6">
+              <form action="voted" method="post" class="reveal-content">
+                  <a href="https://www.delfi.lt/apps/augintinis/dalyvis/17338" target="_blank">
+                    <img src="./static/assets/images/003-katsu.jpg" class="img-responsive" alt=""><br>
+                  </a>
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-default btn-lg" name="voting" value="katsu">VoteMe5</button><br>
+                  </div>
+              </form>
+            </div>
+          </div>
+        </div>
+  </div>
+</div>
+{% endblock %}

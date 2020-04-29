@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}
+FoodMood
+{% endblock %}
+
+{% block content %}
+<div class="section-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="section-container-spacer text-center">
+            <h1 class="h2"></h1>
+            <p>Thanks for a contribution, Stranger! <br>
+                May the food be with you!<br></p>
+            <iframe src="https://giphy.com/embed/2Wv8ckKSPblFC" width="360" height="200" frameBorder="0" class="giphy-embed"></iframe>
+            <form action="/foodmood.html">
+                <button type="submit" class="btn btn-default btn-lg">check again</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+{% endblock %}

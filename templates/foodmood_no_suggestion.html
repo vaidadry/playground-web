@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}
+FoodMood
+{% endblock %}
+
+{% block content %}
+<div class="section-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <img src="./static/assets/images/cover-foodmood.jpg" class="img-responsive" alt="">
+        <div class="card-container">
+          <div class="text-center">
+            <h1 class="h2">001 : FoodMood</h1>
+          </div>
+          <p> Cool pitch on foodMood app Cool pitch on foodMood app Cool pitch on foodMood app Cool pitch on
+            foodMood app Cool pitch on foodMood app Cool pitch on foodMood app Cool pitch on foodMood app
+            Cool pitch on foodMood app Cool pitch on foodMood app</p>
+        </div>
+      </div>
+      <div class="col-md-8 col-md-offset-2 section-container-spacer">
+          <div class="text-center">
+            <h3>Suggestion for {{output2}}</h3>
+            <div class="alert alert-success" role="alert">{{output}}</div>
+            <form action="/foodmood.html">
+              <button type="submit" class="btn btn-default btn-lg">check again</button>
+            </form>
+            <form action="/foodmood_add_suggestion.html">
+              <button type="submit" class="btn btn-default btn-lg">want to add</button>
+            </form>
+          </div>
+      </div>
+    </div>
+      <div class="col-md-8 col-md-offset-2 section-container-spacer">
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <img src="./static/assets/images/001-food1.jpg" class="img-responsive" alt="">
+            <p>some title</p>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <img src="./static/assets/images/001-food1.jpg" class="img-responsive" alt="">
+            <p>some title</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+{% endblock %}
