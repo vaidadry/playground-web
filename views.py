@@ -28,6 +28,7 @@ db = SQLAlchemy(app)
 
 import models
 
+
 @app.route('/')
 @app.route('/home')
 def my_home():
