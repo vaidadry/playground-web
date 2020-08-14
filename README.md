@@ -22,4 +22,4 @@ html template
  * v1.1 built on pandas dataframe, script gives random meal
  suggestions based on preferences; 
  * v1.2 possible to add new recipes, form validation and 
- converter so that all inputted data come clean to DB.
+ converter so that all inputted data come clean to Postgres DB.
