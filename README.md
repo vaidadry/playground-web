@@ -9,6 +9,7 @@ What's done:
 2) _SafePass_ safe password checker script integrated
 3) _Foodmood_ - meal generator randomly generates 
 meal(according preferences) and gives recipe link, new recipes can be added, form validation applied
+4) _Error handling_ (404/500)
 
 ______________________________________________
 More on projects:
